@@ -34,28 +34,4 @@ public class Animal {
         System.out.println("Name: " + this.name + ", Animal Type: " + animalType);
     }
 
-    public StringBuilder getAnimalType() {
-        return animalType;
-    }
-
-    public void setAnimalType(StringBuilder animalType) {
-        this.animalType = animalType;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String[] getSounds() {
-        return sounds;
-    }
-
-    public void setSounds(String[] sounds) {
-        this.sounds = sounds;
-    }
-
 }
