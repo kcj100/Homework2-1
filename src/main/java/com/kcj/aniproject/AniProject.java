@@ -23,7 +23,7 @@ public class AniProject {
         horse.printAnimalSound();
         System.out.println("");
         
-        System.out.println("I like those sounds the animals make. Can they make more?");
+        System.out.println("I like those sounds that the animals make. Can they make more?");
         System.out.println("\nYes, indeed they can. Here is everything in total:\n");
         dog.printDescriptions();
         dog.printAllAnimalSounds();
