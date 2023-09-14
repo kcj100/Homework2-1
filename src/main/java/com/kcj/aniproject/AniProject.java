@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.kcj.aniproject;
 
 /**
@@ -11,19 +10,30 @@ package com.kcj.aniproject;
 public class AniProject {
 
     public static void main(String[] args) {
-        Animal dog = new Animal("Dog", "Rocky", new String[]{"woof!", "roof!"});
-        Animal cat = new Animal("Cat", "Misty", new String[]{"meow!", "purr..."});
-        Animal horse = new Animal("Horse", "Thunder", new String[]{"neigh!", "pfff!"});
+        Animal dog = new Animal(new StringBuilder("Dog"), "Rocky", new String[]{"woof!", "roof!", "grrr!"});
+        Animal cat = new Animal(new StringBuilder("Cat"), "Misty", new String[]{"meow!", "purr...", "hissss!"});
+        Animal horse = new Animal(new StringBuilder("Horse"), "Thunder", new String[]{"neigh!", "pfff!", "brrr!"});
         
-        dog.printDescription();
         dog.printAnimalSound();
         System.out.println("");
-        
-        cat.printDescription();
+
         cat.printAnimalSound();
         System.out.println("");
-        
-        horse.printDescription();
+
         horse.printAnimalSound();
+        System.out.println("");
+        
+        System.out.println("I like those sounds the animals make. Can they make more?");
+        System.out.println("\nYes, indeed they can. Here is everything in total:\n");
+        dog.printDescriptions();
+        dog.printAllAnimalSounds();
+        System.out.println("");
+        cat.printDescriptions();
+        cat.printAllAnimalSounds();
+        System.out.println("");
+        horse.printDescriptions();
+        horse.printAllAnimalSounds();
+        
+        
     }
 }
