@@ -30,6 +30,10 @@ public class Animal {
                 .forEach(i -> System.out.println(i));
     }
 
+    public void printDescriptions() {
+        System.out.println("Name: " + this.name + ", Animal Type: " + animalType);
+    }
+
     public StringBuilder getAnimalType() {
         return animalType;
     }
@@ -52,10 +56,6 @@ public class Animal {
 
     public void setSounds(String[] sounds) {
         this.sounds = sounds;
-    }
-    
-    public void printDescriptions() {
-        System.out.println("Name: " + this.name + ", Animal Type: " + animalType);
     }
 
 }
